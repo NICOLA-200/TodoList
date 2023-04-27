@@ -9,8 +9,8 @@ body {
      height: 100vh;
      background: linear-gradient(
           35deg,
-          #8052ec,
-          #d161ff
+          #5fec52,
+          #b8ff61b3
      );
 }
 
@@ -21,6 +21,7 @@ body {
      transform: translate(-50%,-50%);
      top: 50%;
      left: 50%;
+     border-radius: 3px;
      padding:  30px 40px; 
 }
 
@@ -48,7 +49,7 @@ body {
 
 #newtask input:focus {
      outline:  none;
-     border-radius: #8052ec;
+     border-radius: #78ec52;
 }
 
 #newtask button {
@@ -60,33 +61,40 @@ body {
      font-family: "Poppins",sans-serif;
      font-weight: 500;
      font-size: 16px;
-     background-color: #8052ec; 
+     background-color: #5cec52; 
      box-shadow: none;
      color: white;
      border: none;
      cursor: pointer;
 }
+#newtask button:hover {
+     background-color: #fff;
+     color: #57ec52;
+     border:2px solid #57ec52;
+}
 
 #tasks {
-     background-color: #ffffff;
-     padding: 30px 20px;
+     
+     padding: 20px 20px;
      margin-top: 60px;
      border-radius: 10px;
      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
      width: 100%;
+     border: 3px solid white;
      position: relative;
 }
 
 .task {
      background-color: #fff;
-     height: 50px;
-     padding: 5px 10px;
-     margin-top: 10px;
+     height: 70px;
+     padding: 15px 10px;
+     margin-top: 20px;
      display: flex;
      align-items: center;
      justify-content: space-between;
      border-bottom: 2px solid #d1d3d4;
      cursor: pointer;
+     border-radius: 10px;
 }
 
 
@@ -97,7 +105,7 @@ body {
 }
 
 .task button {
-     background-color: #8052ec;
+     background-color: #57ec52;
      color: #ffffff;
      height: 100%;
      width: 40px;
@@ -105,6 +113,13 @@ body {
      border: none;
      cursor: pointer;
      outline: none;
+}
+
+.task button:hover {
+     background-color: #fff;
+     color: #57ec52;
+     border:2px solid #57ec52;
+
 }
 
 .completed {
