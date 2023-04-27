@@ -18,9 +18,19 @@ document.querySelector('#push').onClick = function
             </div>
           `;
 
-          var current_task = document.querySelector("delete");
+          var current_task = document.querySelector(".delete");
           for (var i=0; i<current_tasks.length; i++) {
-               current_tasks[i].onClick
+               current_tasks[i].onClick = function () {
+                    this.parentNode.remove()
+               }
+          }
+
+          var tasks = document.querySelectorAll(".tasks")
+          for (var i=0; i<tasks.length;i++) {
+               tasks[i].onClick = function () {
+                    this.classList.toggle('completed')
+               }
           }
      }
+
  }
